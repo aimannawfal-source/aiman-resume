@@ -1,0 +1,102 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    font-family: Arial, sans-serif;
+    color: white;
+    text-align: center;
+}
+
+/* NAVBAR */
+nav {
+    width: 100%;
+    background: #1a1a1a;
+    padding: 15px 0;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    border-bottom: 2px solid #a020f0;
+    box-shadow: 0 0 15px #a020f0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    text-shadow: 0 0 8px #a020f0;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #a020f0;
+    text-shadow: 0 0 12px #a020f0;
+}
+
+/* Glow background */
+.glow-bg {
+    position: fixed;
+    top: -20%;
+    left: -10%;
+    width: 60%;
+    height: 60%;
+    background: radial-gradient(circle, rgba(160,32,240,0.4), transparent 70%);
+    filter: blur(90px);
+    z-index: -1;
+}
+
+/* PAGE TITLE */
+.title {
+    font-size: 45px;
+    font-weight: bold;
+    margin: 40px 0;
+    text-shadow: 0 0 10px #a020f0, 0 0 25px #a020f0;
+    letter-spacing: 2px;
+}
+
+/* FAMILY SECTION */
+.family-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+}
+
+.family-card {
+    background-color: white;
+    color: black;
+    padding: 20px;
+    width: 250px;
+    border-radius: 12px;
+    box-shadow: 0 0 20px #a020f0;
+    text-align: center;
+}
+
+.family-card h3 {
+    color: #b366ff;
+    margin-bottom: 10px;
+    text-shadow: 0 0 8px #a020f0;
+}
+
+.family-card img {
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 0 15px #a020f0;
+    margin-bottom: 10px;
+}
+
+.family-card p {
+    font-size: 16px;
+    color: black;
+    font-weight: normal;
+}
+
+/* MARQUEE */
+marquee {
+    margin-top: 30px;
+    font-size: 25px;
+    font-weight: bold;
+    color: #b366ff;
+    text-shadow: 0 0 10px #a020f0;
+}
