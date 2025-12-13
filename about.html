@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About Me</title>
+
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        background-color: black;
+        font-family: Arial, sans-serif;
+        color: white;
+        text-align: center;
+    }
+
+    /* NAVBAR */
+    nav {
+        width: 100%;
+        background: #1a1a1a;
+        padding: 15px 0;
+        display: flex;
+        justify-content: center;
+        gap: 40px;
+        border-bottom: 2px solid #a020f0;
+        box-shadow: 0 0 15px #a020f0;
+    }
+
+    nav a {
+        color: white;
+        text-decoration: none;
+        font-size: 18px;
+        font-weight: bold;
+        text-shadow: 0 0 8px #a020f0;
+        transition: 0.3s;
+    }
+
+    nav a:hover {
+        color: #a020f0;
+        text-shadow: 0 0 12px #a020f0;
+    }
+
+    /* Glow background */
+    .glow-bg {
+        position: fixed;
+        top: -20%;
+        left: -10%;
+        width: 60%;
+        height: 60%;
+        background: radial-gradient(circle, rgba(160,32,240,0.4), transparent 70%);
+        filter: blur(90px);
+        z-index: -1;
+    }
+
+    /* PAGE TITLE */
+    .title {
+        font-size: 45px;
+        font-weight: bold;
+        margin: 40px 0;
+        text-shadow: 0 0 10px #a020f0, 0 0 25px #a020f0;
+        letter-spacing: 2px;
+    }
+
+    /* PROFILE IMAGE */
+    .profile-pic {
+        width: 180px;
+        height: 220px;
+        background-image: url('profile2.jpeg'); 
+        background-size: cover;
+        background-position: center;
+        border: 3px solid #a020f0;
+        box-shadow: 0 0 20px #a020f0, 0 0 35px #6a0dad;
+        border-radius: 10px;
+        margin-bottom: 40px;
+        display: inline-block;
+    }
+
+    /* TABLE CENTERED */
+    table {
+    margin: 0 auto 50px auto;
+    border-collapse: separate;
+    border-spacing: 0;
+    width: 600px; /* <-- adjust panjang table di sini */
+    font-size: 20px;
+    text-align: center;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+    table td {
+        padding: 15px;
+        font-weight: bold;
+        border-bottom: 1px solid #a020f0;
+    }
+
+    /* LEFT CELL (Name, Age, Status) */
+    table tr td:first-child {
+        background-color: #b366ff; /* purple */
+        color: black;
+        border-right: 1px solid #a020f0;
+    }
+
+    /* RIGHT CELL (values) */
+    table tr td:last-child {
+        background-color: white;
+        color: black;
+    }
+
+    /* Remove last border-bottom on last row */
+    table tr:last-child td {
+        border-bottom: none;
+    }
+
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav>
+    <a href="index.html">HOME</a>
+    <a href="about.html">ABOUT ME</a>
+    <a href="interest.html">INTEREST</a>
+    <a href="skills.html">SKILLS</a>
+    <a href="education.html">EDUCATION</a>
+    <a href="family.html">FAMILY</a>
+    <a href="work.html">WORK EXPERIENCE</a>
+    <a href="contact.html">CONTACT</a>
+</nav>
+
+<div class="glow-bg"></div>
+
+<!-- PAGE TITLE -->
+<div class="title">MY PROFILE</div>
+
+<!-- PROFILE IMAGE -->
+<div class="profile-pic"></div>
+
+<!-- TABLE -->
+<table>
+    <tr>
+        <td>Name</td>
+        <td>AIMAN NAWFAL BIN MOHAMED ZAHARUDIN</td>
+    </tr>
+    <tr>
+        <td>Age</td>
+        <td>20 years old</td>
+    </tr>
+    <tr>
+        <td>Status</td>
+        <td>Student</td>
+    </tr>
+<tr>
+<td>Hobby</td>
+<td>Cooking and Reading</td>
+</table>
+
+</body>
+</html>
