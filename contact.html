@@ -1,0 +1,160 @@
+<html>
+<head>
+<title>Contact Me - Aiman Resume</title>
+
+<!-- FONT AWESOME ICON -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+/* NAVBAR GLOW PURPLE */
+nav {
+    width: 100%;
+    background: #1a1a1a;
+    padding: 15px 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    border-bottom: 2px solid #a020f0;
+    box-shadow: 0 0 15px #a020f0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    text-shadow: 0 0 8px #a020f0;
+    padding: 8px 14px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #a020f0;
+    text-shadow: 0 0 12px #b366ff;
+}
+
+/* BACKGROUND GLOW */
+.glow-bg {
+    position: fixed;
+    top: -20%;
+    left: -10%;
+    width: 60%;
+    height: 60%;
+    background: radial-gradient(circle, rgba(160,32,240,0.4), transparent 70%);
+    filter: blur(90px);
+    z-index: -1;
+}
+
+/* CONTACT CARD */
+.contact-container {
+    max-width: 700px;
+    margin: 60px auto;
+    background: white;
+    color: black;
+    padding: 40px 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 25px #a020f0;
+}
+
+.contact-container h2 {
+    color: #b366ff;
+    text-shadow: 0 0 8px #a020f0;
+    margin-bottom: 30px;
+}
+
+/* CONTACT ITEM */
+.contact-item {
+    font-size: 18px;
+    margin: 25px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.contact-item i {
+    font-size: 28px;
+    color: #b366ff;
+}
+
+/* LINK */
+.contact-link {
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.contact-link:hover {
+    color: #b366ff;
+}
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+    .contact-item {
+        flex-direction: column;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="glow-bg"></div>
+
+<!-- NAVIGATION BAR -->
+<nav>
+    <a href="index.html">HOME</a>
+    <a href="about.html">ABOUT ME</a>
+    <a href="interest.html">INTEREST</a>
+    <a href="skills.html">SKILLS</a>
+    <a href="education.html">EDUCATION</a>
+    <a href="family.html">FAMILY</a>
+    <a href="work.html">WORK EXPERIENCE</a>
+    <a href="contact.html">CONTACT</a>
+</nav>
+
+<!-- CONTACT SECTION -->
+<div class="contact-container">
+    <h2>CONTACT ME</h2>
+
+    <!-- EMAIL -->
+    <div class="contact-item">
+        <i class="fa-solid fa-envelope"></i>
+        <span>Email: <strong>aimannawfal05@gmail.com</strong></span>
+    </div>
+
+    <!-- PHONE -->
+    <div class="contact-item">
+        <i class="fa-solid fa-phone"></i>
+        <span>Phone: <strong>016-8014024</strong></span>
+    </div>
+
+    <!-- FACEBOOK (DIRECT TO YOUR PROFILE) -->
+    <div class="contact-item">
+        <i class="fa-brands fa-facebook"></i>
+        <span>
+            Facebook:
+            <a class="contact-link"
+               href="https://www.facebook.com/aiman.nawfal.35?mibextid=wwXIfr&rdid=Yh9DRWHAOgckMDuk&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1AAL28zyzJ%2F%3Fmibextid%3DwwXIfr"
+               target="_blank">
+               Visit my Facebook Profile
+            </a>
+        </span>
+    </div>
+</div>
+
+</body>
+</html>
+
